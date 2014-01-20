@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyViewController : UIViewController <UITextFieldDelegate>
+@interface MyViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *myLabel;
 @property (strong, nonatomic) IBOutlet UITextField *textField;
+
+- (IBAction)didTapClearButton:(id)sender;
 
 @end

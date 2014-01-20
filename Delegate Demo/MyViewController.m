@@ -44,4 +44,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)didTapClearButton:(id)sender {
+    
+    UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle:@"my title" message:@"Are you sure you want to clear the text?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+    [myAlert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+
+    if (buttonIndex == 0)
+    {
+        NSLog(@"Yes");
+    }
+    else
+    {
+        NSLog(@"No");
+    }
+}
 @end
