@@ -55,11 +55,10 @@
 
     if (buttonIndex == 0)
     {
-        NSLog(@"Yes");
-    }
-    else
-    {
-        NSLog(@"No");
+        NSLog(@"Clicked No");
+    } else {
+        self.textField.text = @"";
+        self.myLabel.text = @"";
     }
 }
 @end
